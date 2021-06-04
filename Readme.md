@@ -11,3 +11,9 @@ We will upload our daily code
         4.Second command "npx-create-react-app client" to create react-app
         5.We install express, socket.io, nodemon
         6.Now we create repo on github and upload this folder on existing folder.
+
+**Day 2** 
+        
+        1.We wanted to attach React with node server.js but it's not working.
+        2.Basically, we had attached .html but there is difference in react.
+        
