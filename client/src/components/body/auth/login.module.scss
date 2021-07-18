@@ -1,0 +1,119 @@
+.signin {
+  height: 94vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #7e8a9b;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(51, 51, 37, 0.76),
+      rgba(63, 39, 80, 0.849)
+    ),
+    url(../../../img/home_image.jpg);
+  background-size: cover;
+  background-position: center;
+  //  opacity: 0.7;
+  // z-index: -10;
+  & .left {
+    color: rgba(45, 221, 22, 0.897);
+  }
+
+  & .info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dddfe2;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    & form {
+      & div {
+        & input {
+          width: 22rem;
+          height: 3.2rem;
+          padding: 14px 16px;
+          margin-bottom: 1rem;
+          border-radius: 6px;
+          border: 1px solid #dddfe2;
+          size: 1.2rem;
+        }
+        & button {
+          background-color: #1877f2;
+          border: none;
+          border-radius: 6px;
+          font-size: 20px;
+          line-height: 48px;
+          padding: 0 16px;
+          width: 22rem;
+
+          &:hover {
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+              200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+              200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+          }
+        }
+      }
+    }
+    & .forgot {
+      text-align: center;
+      margin-top: 1rem;
+      & .link {
+        text-decoration: none;
+        color: #1877f2;
+      }
+    }
+    & .line {
+      margin: 20px 16px;
+      border-bottom: 1px solid #dadde1;
+      text-align: center;
+    }
+    & .link {
+      padding-top: 6px;
+      text-align: center;
+
+      & button {
+        border: none;
+        border-radius: 6px;
+        font-size: 17px;
+        line-height: 48px;
+        padding: 0 16px;
+        background-color: #42b72a;
+        &:hover {
+          cursor: pointer;
+          display: inline-block;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.password {
+  position: relative;
+  & .show {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+  }
+}
+
+.errorMsg {
+  color: #ff0000;
+
+  margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 700px,) {
+  .signin {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+} ;

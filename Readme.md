@@ -1,9 +1,10 @@
 ---
 # Web Chat App
-        
-We will upload our daily code 
+
+We will upload our Weekly code
 ---
-**Day 1**
+
+**Weak 1**
 
         1.We are created Frontend(client) and backend folder.
         2.Let's intsall some packages which are imported in this chat application
@@ -12,8 +13,8 @@ We will upload our daily code
         5.We install express, socket.io, nodemon
         6.Now we create repo on github and upload this folder on existing folder.
 
-**Day 2** 
-        
+**Weak 2**
+
         1.We wanted to attach React with node server.js but it's not working.
         2.Basically, we had attached .html but there is difference in react.
-        
+

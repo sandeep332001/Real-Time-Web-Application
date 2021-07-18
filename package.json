@@ -4,12 +4,26 @@
   "description": "People can chat on this web application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
   },
   "author": "Sandeep Maurya",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.26.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "googleapis": "^82.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "nodemailer": "^6.6.3",
     "nodemon": "^2.0.7",
     "socket.io": "^4.1.2"
   }
