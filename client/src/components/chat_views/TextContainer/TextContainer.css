@@ -1,10 +1,14 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  color: white;
-  height: 60%;
-  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  height: 70%;
+  justify-content: center;
+}
+
+.con_image {
+  background: url("../../../img/online-chat-banner.jpg");
+  z-index: -10;
 }
 
 .activeContainer {

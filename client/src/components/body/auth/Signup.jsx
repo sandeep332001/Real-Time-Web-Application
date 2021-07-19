@@ -162,7 +162,7 @@ const Signup = (props) => {
             setPassword("");
             console.log(res);
             setTimeout(function () {
-              history.push("/");
+              history.push("/home");
             }, 5000);
           } else {
             setErr(res.msg);
@@ -272,7 +272,7 @@ const Signup = (props) => {
           <div className="d-flex justify-content-center mt-3 login_container">
             <div className={classes.linkbutton}>
               <button>
-                <Link to="/" className={classes.link}>
+                <Link to="/home" className={classes.link}>
                   Cancel
                 </Link>
               </button>

@@ -14,7 +14,7 @@ function Header() {
     try {
       await axios.get("/user/logout");
       localStorage.removeItem("firstLogin");
-      window.location.href = "/";
+      window.location.href = "/login";
     } catch (err) {
       window.location.href = "/";
     }
@@ -32,7 +32,7 @@ function Header() {
   );
   return (
     <Navbar expand="lg" style={{ height: "6vh", background: "#2dd6c8b0" }}>
-      <Navbar.Brand to="/" as={Link}>
+      <Navbar.Brand to="/home" as={Link}>
         Real Time Web Chat
       </Navbar.Brand>
 

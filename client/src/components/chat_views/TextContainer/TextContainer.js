@@ -6,26 +6,11 @@ import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import "./TextContainer.css";
 
 const TextContainer = ({ users }) => (
-  <div className="textContainer">
+  <div className="textContainer con_image">
     <div>
-      <h1>
-        Realtime Chat Application{" "}
-        <span role="img" aria-label="emoji">
-          💬
-        </span>
-      </h1>
-      <h2>
-        Created with React, Express, Node and Socket.IO{" "}
-        <span role="img" aria-label="emoji">
-          ❤️
-        </span>
-      </h2>
-      <h2>
-        Try it out right now!{" "}
-        <span role="img" aria-label="emoji">
-          ⬅️
-        </span>
-      </h2>
+      <h1>Realtime Chat Application </h1>
+      <h2>Created with React, Express, Node and Socket.IO</h2>
+      <h2>Try it out right now! </h2>
     </div>
     {users ? (
       <div>

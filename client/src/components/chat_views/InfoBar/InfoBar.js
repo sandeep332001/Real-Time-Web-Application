@@ -15,7 +15,7 @@ const InfoBar = ({ room }) => (
       <h3 style={{ color: "black" }}>{room}</h3>
     </div>
     <div className="rightInnerContainer">
-      <a href="/">
+      <a href="/home">
         {/* <img src={closeIcon} alt="close icon" className="closeIcon" /> */}
         <CloseIcon style={{ color: "black" }} />
       </a>
